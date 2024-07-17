@@ -1,12 +1,3 @@
 {
-    "ros.distro": "humble",
-    "files.associations": {
-        "ostream": "cpp",
-        "vector": "cpp",
-        "*.tcc": "cpp",
-        "deque": "cpp",
-        "forward_list": "cpp",
-        "list": "cpp",
-        "string": "cpp"
-    }
+    "ros.distro": "humble"
 }
