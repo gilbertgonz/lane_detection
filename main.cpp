@@ -71,7 +71,7 @@ int main() {
         cout << "No image" << "\n";
     }
 
-    // Source points
+    // Source points (manual)
     Point2f src_points[4];
     src_points[0] = Point(527, 514);
     src_points[1] = Point(765, 514);
@@ -95,7 +95,6 @@ int main() {
 
     Mat org_img;
     Mat img;
-    Mat resized_img;
 
     while (true) {
         cap.read(org_img);
@@ -189,9 +188,8 @@ int main() {
         addWeighted(org_img, 1, overlay, 0.4, 0, org_img);
         
         // Show
-        resize(org_img, resized_img, Size(), 0.5, 0.5);
         imshow("Preprocess", out);
-        imshow("src", resized_img);
+        imshow("src", org_img);
         
         if (waitKey(50) > 0)
             break;

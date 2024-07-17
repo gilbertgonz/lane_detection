@@ -1,6 +1,8 @@
 # Lane detection in C++
 yes I know, cliche. this is just exploratory/for learning purposes/bored
 
+![](assets/results.gif)
+
 ## To run:
 1. Install [docker](https://docs.docker.com/engine/install/)
 

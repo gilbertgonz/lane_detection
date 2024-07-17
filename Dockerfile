@@ -8,7 +8,6 @@ RUN apt update && apt install -y \
 RUN apt install -y pip && pip install opencv-python
 
 COPY main.cpp /main.cpp
-COPY test.py /test.py
 COPY CMakeLists.txt /CMakeLists.txt
 COPY assets/ /assets/
 
